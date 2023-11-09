@@ -5,7 +5,7 @@
 
 }
 
-html,
+
 body {
   background-color: #fcf2e3;
 }
@@ -14,6 +14,9 @@ body {
   background-color: #1b1b32;
   height: 54px;
   width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .titulo-sitio{
@@ -23,4 +26,23 @@ body {
   text-transform: uppercase;
   margin-top: 10px;
   margin-left: 7px;
+  width: 1200px;
+}
+
+#container-boton{
+  background-color: rgb(223, 222, 222);
+  position: relative;
+  width: 80px;
+  height: 40px;
+  margin: 0px auto;
+  margin-right: 15px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+#container-boton.active.toggle {
+  left: 40px;
+}
+body.active{
+  background-color: black;
 }
